@@ -4,34 +4,28 @@ import { Badge } from '@/components/ui/badge';
 export const Timeline = () => {
   const timelineEvents = [
     {
-      year: "2013",
-      title: "B.S. in Computer Science",
-      type: "Education",
-      description: "Started university studies"
-    },
-    {
-      year: "2016",
-      title: "Frontend Developer",
-      type: "Career Start",
-      description: "Began professional journey"
-    },
-    {
       year: "2019",
       title: "Frontend Developer",
-      type: "Growth",
-      description: "Advanced frontend skills"
+      type: "Career Start",
+      description: "Started at Spacestock, building web applications and mobile apps"
+    },
+    {
+      year: "2021",
+      title: "Frontend Developer",
+      type: "Finance",
+      description: "Joined Jenius, worked on Remittance Feature"
     },
     {
       year: "2022",
       title: "Sr. Fullstack Developer",
       type: "Senior Level",
-      description: "Reached senior position"
+      description: "Led development at Codedegree, creating learning platform"
     },
     {
-      year: "Present",
-      title: "Software Developer",
+      year: "2022",
+      title: "Freelance Software Developer",
       type: "Current",
-      description: "Freelance work"
+      description: "Self-employed, developing custom software solutions"
     }
   ];
 
