@@ -37,31 +37,31 @@ export const Timeline = () => {
 
   return (
     <PokedexCard>
-      <h3 className="text-xl font-bold text-foreground mb-6 text-center">Career Timeline</h3>
+      <h3 className="text-xl font-bold text-foreground mb-8 text-center">Career Timeline</h3>
       
-      <div className="relative">
+      <div className="relative max-w-3xl mx-auto">
         {/* Timeline line */}
-        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent"></div>
+        <div className="absolute left-6 top-4 bottom-4 w-0.5 bg-gradient-to-b from-primary via-accent to-primary/30"></div>
         
-        <div className="space-y-6">
+        <div className="space-y-8">
           {timelineEvents.map((event, index) => (
-            <div key={event.year} className="relative flex items-start gap-4">
+            <div key={event.year} className="relative flex items-start gap-6">
               {/* Timeline dot */}
-              <div className="relative z-10 w-4 h-4 rounded-full bg-primary shadow-glow flex-shrink-0 mt-2"></div>
+              <div className="relative z-10 w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 flex-shrink-0 mt-3 shadow-glow"></div>
               
               {/* Content */}
-              <div className="flex-1 pb-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-lg font-bold text-primary">{event.year}</span>
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <span className="text-xl font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{event.year}</span>
                   <Badge 
                     variant="outline" 
-                    className="border-accent text-accent-foreground text-xs"
+                    className="border-accent/50 text-accent bg-accent/10"
                   >
                     {event.type}
                   </Badge>
                 </div>
-                <h4 className="font-semibold text-foreground mb-1">{event.title}</h4>
-                <p className="text-sm text-muted-foreground">{event.description}</p>
+                <h4 className="font-bold text-lg text-foreground mb-2">{event.title}</h4>
+                <p className="text-muted-foreground leading-relaxed">{event.description}</p>
               </div>
             </div>
           ))}
