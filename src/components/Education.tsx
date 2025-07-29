@@ -23,7 +23,7 @@ export const Education = () => {
   return (
     <div className="space-y-6">
       <div className="pokedex-nav">
-        <img src={educationPokemon} alt="Education Pokemon" className="w-8 h-8" />
+        <img src={educationPokemon} alt="Education Pokemon" className="w-8 h-8 rounded-2xl" />
         <h2 className="text-2xl font-bold">Education & Research</h2>
       </div>
 
@@ -46,7 +46,7 @@ export const Education = () => {
                 <Calendar size={16} />
                 <span className="text-sm">{education.period}</span>
               </div>
-              <Badge variant="outline" className="border-accent text-accent-foreground">
+              <Badge variant="outline" className="border-accent">
                 {education.type}
               </Badge>
             </div>
