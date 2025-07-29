@@ -53,7 +53,7 @@ export const WorkExperience = () => {
   return (
     <div className="space-y-6">
       <div className="pokedex-nav">
-        <img src={workPokemon} alt="Work Pokemon" className="w-8 h-8" />
+        <img src={workPokemon} alt="Work Pokemon" className="w-8 h-8 rounded-2xl" />
         <h2 className="text-2xl font-bold">Work Experience</h2>
       </div>
 
@@ -72,7 +72,7 @@ export const WorkExperience = () => {
                 <Calendar size={16} />
                 <span className="text-sm">{exp.period}</span>
               </div>
-              <Badge variant="outline" className="border-accent text-accent-foreground">
+              <Badge variant="outline" className="border-accent">
                 {exp.type}
               </Badge>
             </div>
