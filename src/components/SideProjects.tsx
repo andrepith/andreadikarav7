@@ -136,14 +136,6 @@ export const SideProjects = () => {
               ))}
             </div>
           </div>
-
-          <div className="pt-4 border-t border-border">
-            <p className="text-sm text-muted-foreground italic">
-              The project aims to demonstrate the feasibility of using
-              behavioral cloning with a CNN to control a virtual car in a
-              simulator.
-            </p>
-          </div>
         </PokedexCard>
       ))}
     </div>
